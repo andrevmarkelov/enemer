@@ -1,0 +1,76 @@
+main {
+    width: 100%;
+    background-image: url("/assets/img/backround.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-shadow {
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0 0 20px rgba(205, 205, 205, 0.25);
+    backdrop-filter: blur(20px);
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 130%;
+    color: #2E2E2E;
+}
+
+ul li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2E2E2E;
+    list-style: none;
+    background: url("/assets/img/check-mark.svg") no-repeat 0 4px;
+    padding-left: 24px;
+}
+
+button {
+    background-color: #78599C;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    transition: 0.3s all;
+}
+
+button:hover {
+    background-color: #684c89;
+}
+
+@media screen and (max-width: 991px) {
+    main {
+        background-image: url("/assets/img/mobile-backround.png");
+    }
+
+    .bg-shadow {
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        margin: 0 0 57px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+}
