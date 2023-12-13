@@ -46,6 +46,21 @@ button:hover {
     background-color: #684c89;
 }
 
+#cookieModal {
+    display: none;
+    width: 900px;
+    background-color: #F9F9F9;
+    border-radius: 4px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2E2E2E;
+}
+
 @media screen and (max-width: 991px) {
     main {
         background-image: url("/assets/img/mobile-backround.png");
@@ -57,6 +72,10 @@ button:hover {
         box-shadow: none;
         backdrop-filter: none;
         margin: 0 0 57px 0;
+    }
+
+    #cookieModal {
+        width: 100%;
     }
 }
 
