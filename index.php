@@ -14,6 +14,8 @@
 
     <?php include_once 'view/block-layout.php'; ?>
 
+    <?php include_once 'view/phone-form.php'; ?>
+
     <?php include_once 'view/cookie-popup.php'; ?>
 
     <script src="assets/js/bootstrap.js"></script>
