@@ -34,3 +34,25 @@ const getCookie = (name) => {
 
     return null;
 }
+
+const getCountryByNumber = async () => {
+    const phoneNumber = document.getElementById('phone').value;
+
+    try {
+        const response = await fetch("/controller/PhoneController.php", {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: `phone=${encodeURIComponent(phoneNumber)}`,
+        });
+
+        if (response.ok) {
+            document.getElementById('resultCountry').value = await response.text();
+        } else {
+            console.error('Error:', response.status, response.statusText);
+        }
+    } catch (error) {
+        console.error('Fetch error:', error.message);
+    }
+}
